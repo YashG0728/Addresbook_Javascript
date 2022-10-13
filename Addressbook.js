@@ -72,9 +72,18 @@ class Contact {
         ", city : "+ this.city + ", State : "+ this.state +", Zip : "+ this.zip+ ", Phone No : "+ this.phoneNo + ", Email : "+ this.email;
     }
 }  
+let addressBookArray = new Array();
+
 try{
-    let contact = new Contact("Yash", "Gharde", "Vinobanagar", "Nagpur", "Maharastra", "441912", "91 9898009870", "Yashgharde07@gmail.com");
-    console.log(contact.toString());
+    addressBookArray.push(new Contact("Yash", "Gharde", "Vinobanagar", "Nagpur", "Maharastra", "441912", "91 9898009870", "Yashgharde07@gmail.com"));
 }catch(e){
     console.error(e);
 }
+
+try{
+    addressBookArray.push(new Contact("Bharat", "Pathak", "Shivainagar", "Nagpur", "Maharastra", "441912", "91 9898125870", "bharatpathak29@gmail.com"));
+}catch(e){
+    console.error(e);
+}
+
+console.log(addressBookArray)
